@@ -13,76 +13,35 @@
   <body>
     
                         
-                      <br>
-                    <h3>บาร์แสดงแคลลอรี่ที่จำเป็นต่อหนึ่งวัน</h3>
-                     <br>
-                      <div class="progress">
-                            <div class="progress-bar bg-warning "  role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="" aria-valuemax="100">50%</div>
-                          </div>
+                      <br><h3 style="text-align:center;">ตารางแสดงโภชนาการ</h3>
+                     
                       <table class="table">
                             <br>              
   <thead class="thead-dark">
     <tr>
       <th scope="col">#</th>
       <th scope="col">NAME</th>
+      <th scope="col">GOAL</th>
+      <th scope="col">TOTAL</th>
       <th scope="col">CALORIE</th>
       <th scope="col">SUGAR</th>
       <th scope="col">OIL</th>
       <th scope="col">SODIUM</th>
-      <th scope="col">GOAL</th>
-      <th scope="col">TOTAL</th>
+      
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
+      <td id="name"></td>
+      <td id="goal"></td>
+      <td id="total"></td>
+      <td id="calorie"></td>
+      <td id="sugar"></td>
+      <td id="oil"></td>
+      <td id="sodium"></td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">4</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
 
-    </tr>
-    <tr>
-      <th scope="row">5</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">6</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-    
     </tr>
   </tbody>
 </table>
@@ -99,16 +58,29 @@
     
         </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body><script>
-            $(function () {
-            $('.min-chart#chart-sales').easyPieChart({
-                barColor: "#4caf50",
-                onStep: function (from, to, percent) {
-                    $(this.el).find('.percent').text(Math.round(percent));
-                }
+        <script>
+            $("document").ready(function() {
+              var sql  = require('mysql');
+
+              var con = mysql.createConnection({
+                host: "wimp.database.windows.net",
+                user: "lolicon",
+                password: "Admin1100",
+                database: "WhereIsMyPooDB"
+              });
+
+              con.connect(function(err) {
+                if (err) throw err;
+                con.query("SELECT * FROM Kanom", function (err, result, fields) {
+                  if (err) throw err;
+                  console.log(result);
+                });
+              });
             });
-        });
+        </script>
+  </body>
 </html>
