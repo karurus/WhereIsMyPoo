@@ -1,0 +1,2354 @@
+﻿
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <title>คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017</title>
+<meta name="description" content="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017 ศึกษาไวยากรณ์การใช้งานภาษา C# อัพเดตถึงเวอร์ชัน 7.x การใช้งาน Entity Framework ร่วมกับระบบฐานข้อมูล SQL Server การใช้งาน EF Core 2.x แบบ Database First ศุภชัย สมพานิช สวัสดี ไอที">
+<meta name="keywords" content="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017, ศุภชัย สมพานิช, สวัสดี ไอที">
+<link rel="canonical" href="https://www.naiin.com/product/detail/235122"/>
+<meta property="og:title" content="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017" />
+<meta property="og:description" content="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017 ศึกษาไวยากรณ์การใช้งานภาษา C# อัพเดตถึงเวอร์ชัน 7.x การใช้งาน Entity Framework ร่วมกับระบบฐานข้อมูล SQL Server การใช้งาน EF Core 2.x แบบ Database First ศุภชัย สมพานิช สวัสดี ไอที" />
+<meta property="og:type" content="book" />
+<meta property="og:image" content="https://storage.naiin.com/system/application/bookstore/resource/product/201805/235122/1000207471_front_XXL.jpg" />
+<meta property="og:image" content="https://storage.naiin.com/system/application/bookstore/resource/product/201805/235122/1000207471_back_XXL.jpg" />
+<meta property="book:author" content="ศุภชัย สมพานิช" />
+<meta property="book:isbn" content="8859165000521" />
+<meta property="book:release_date" content="2018-05-19" />
+
+<meta name="twitter:title" content="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017" />
+<meta name="twitter:description" content="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017 ศึกษาไวยากรณ์การใช้งานภาษา C# อัพเดตถึงเวอร์ชัน 7.x การใช้งาน Entity Framework ร่วมกับระบบฐานข้อมูล SQL Server การใช้งาน EF Core 2.x แบบ Database First ศุภชัย สมพานิช สวัสดี ไอที" />
+
+    <meta name="og:street-address" content="เลขที่ 108 หมู่ 2 ถนนบางกรวย-จงถนอม ตำบลมหาสวัสดิ์ อำเภอบางกรวย จังหวัดนนทบุรี ">
+    <meta name="og:locality" content="นนทบุรี">
+    <meta name="og:postal-code" content="11130">
+    <meta name="og:country-name" content="Thailand">
+    <meta name="og:phone_number" content="024239999">
+    <meta name="og:fax_number" content="024499558">
+    <meta name="google" value="notranslate">
+    <meta name="robots" content="index,follow">
+	
+    <meta property="fb:app_id" content="277509212450257" >
+    <meta name="ahrefs-site-verification" content="f5ce7fb92c5c05f59ff833513e0b2db2a85b781354993b47593b9ec28553b398">
+
+    <meta name="google" content="nositelinkssearchbox" />
+
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://www.naiin.com/img/global/favicon.png">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="https://www.naiin.com/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/17d488892d.js"></script>
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+
+    <link rel="stylesheet" href="https://www.naiin.com/bootstrap/css/bootstrap-datepicker3.standalone.min.css">
+    <link rel="stylesheet" href="https://www.naiin.com/bootstrap/css/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="https://www.naiin.com/css/global.css?3">
+    <link rel="stylesheet" href="https://www.naiin.com/css/form-naiin.css">
+    <link rel="stylesheet" href="https://www.naiin.com/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://www.naiin.com/css/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="https://www.naiin.com/css/jquery.qtip.css">
+	<link href="https://fonts.googleapis.com/css?family=Athiti" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+            <script src="https://www.naiin.com/js/jquery.min.js"></script>
+    <script src="https://www.naiin.com/js/jquery-ui.min.js"></script>
+    <script src="https://www.naiin.com/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://www.naiin.com/bootstrap/js/bootstrap-datepicker.min.js"></script>
+	<script src="https://www.naiin.com/js/jquery.qtip.js"></script>
+    <script src="https://www.naiin.com/js/global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <!-- <script src="https://www.naiin.com/js/custom-front.js"></script> -->
+
+    <!-- ReCaptcha  -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <!-- Google Analytics  -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-6116503-1', 'auto');
+        ga('send', 'pageview');
+
+
+        
+
+    </script>
+    <!-- //Google Analytics  -->
+
+    <script>
+        function checkSearch()
+        {
+           var searchText = document.getElementById('title').value;
+            if (searchText.trim().replace(/  +/g, ' ').length > 1 )
+            {
+                return true;
+            }
+            return false;
+        }
+
+    </script>
+
+        <!-- Facebook Naiin Pixel Code : Nisa -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '184341488888409');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=184341488888409&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+     <!-- Cxense script begin -->
+    <script type="text/javascript">
+        var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+        cX.callQueue.push(['setSiteId', '1137361125746952943']);
+
+        cX.callQueue.push(['setEventAttributes', { origin: 'ama-naiin', persistedQueryId: 'c12b36239ebc7fa2b54715dc64d5a0618983a650' }]);
+        
+                
+        cX.callQueue.push(['sendPageViewEvent']);
+        $(document).on('click','.cxense-addtocart',function(){
+            var pid = $(this).attr("data-productid");
+
+                cX.callQueue.push(['sendEvent', 'Add_To_Cart', { productId: pid, recommended: 'true' }]);
+
+            });
+        </script>
+        <script type="text/javascript">
+        (function(d,s,e,t){e=d.createElement(s);e.type='text/java'+s;e.async='async';
+        e.src='http'+('https:'===location.protocol?'s://s':'://')+'cdn.cxense.com/cx.js';
+        t=d.getElementsByTagName(s)[0];t.parentNode.insertBefore(e,t);})(document,'script');
+    </script>
+
+    <!-- Cxense script end -->
+    <script>
+        $(function(){
+
+             $("#title").focus();
+
+            $(document).on('keydown',"#title", function (e) {
+              if (e.keyCode == 13) {
+                   if ($("#title").val().trim().replace(/  +/g, ' ').length > 1){
+                       console.log($("#title").val());
+					   
+					   var findstring =  $("#title").val().trim().replace(/  +/g, ' ');
+					   
+					   $("#title").val(findstring);
+					   
+                       $("#formSampleSearch").submit();
+                   }
+                }
+            }); 
+
+            $("#title").autocomplete({
+                   //autoFocus: true ,
+                   source: function (request, response) {
+                    $.ajax({
+                            url: "/autocomplete",
+                            type: "GET", 
+                            dataType: "json",
+                            global:false,
+                            data: {
+                                query: request.term.trim().replace(/  +/g, ' ')
+                            },
+                            success: function (data) {
+                                response(data);
+                            }
+                        });
+                    },
+                    minLength: 3,
+                    select: function (event, ui) {
+                        window.location = "/product/detail" + "/" + ui.item.ProductID + "/";
+                        return false;
+                    }
+                })
+             .autocomplete("instance")._renderItem = function (ul, item) {
+                        return $("<li>")
+                            .append("<div class='mainSearch'><div class='txtSearch-container'>" +
+                                " <div class='txtSearch-thumb'><img src='" + item.ThumbnailFile + "'/></div> " +
+                                " <div class='txtSearch-content'>" +
+                                " <b>" + item.ProductName + "</b><br/>"+ 
+                                "<span class='txt-light'>" + item.AuthorName  + 
+                                "</span>" +
+                                "</div>" +
+                                " </div></div>")
+
+                            .appendTo(ul);
+                    };
+					
+			 $(window).scroll(function(){
+				var window_top = $(window).scrollTop() + 43; // the "12" should equal the margin-top value for nav.stick
+					if (window_top < 100) {
+						 $('.top-nav-container').removeClass('menu-fixed');
+					}else if ($( window ).width() > 992){
+						 $('.top-nav-container').addClass('menu-fixed');
+					}
+
+                $(".ui-autocomplete").hide();
+			});
+
+            $("#btnCloseColor").click(function(){
+                var v =  $.cookie('cgray');
+                if (v == "undefined" || v== "")
+                {
+                    $.cookie('cgray', '1', { expires: 1 ,path: '/'});
+                    $("body").removeClass("filterGray");
+                    $("#btnCloseColor").html("เปิดโหมดสีเทา");
+                }else{
+                    $.cookie('cgray', '', { expires: 1 ,path: '/'});
+                    $("body").addClass("filterGray");
+                    $("#btnCloseColor").html("ปิดโหมดสีเทา");
+                }
+
+                return false;
+            });
+
+            if ($.cookie('cgray')== "1")
+            {
+                $("body").removeClass("filterGray");
+                $("#btnCloseColor").html("เปิดโหมดสีเทา");
+            }
+
+         
+        });
+    </script>
+    <style>
+       
+    </style>
+	         <script>
+        $(function(){
+            
+                $.cookie('IsLogin', 'no', { expires: 1 ,path:'/'  });
+          });
+         </script>
+    
+
+</head>
+
+<body>
+<!--<img src="/img/black_ribbon_top_left.png" class="black-ribbon stick-top stick-left"/>-->
+    <!-- Google Code for Remarketing Tag -->
+    <!-- ------------------------------------------------ -->
+    <!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup -->
+    <!--------------------------------------------------- -->
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var google_conversion_id = 837324350;
+        var google_custom_params = window.google_tag_params;
+        var google_remarketing_only = true;
+        /* ]]> */
+        </script>
+        <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+        </script>
+        <noscript>
+        <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/837324350/?guid=ON&script=0"/>
+        </div>
+    </noscript>
+
+    
+    <div id="page" >
+        <div class="header">
+            <div class="top-header-container navbar-fixed-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="top-store-block">
+                                <ul class="top-header-logo">
+                                   <li><a href="https://www.naiin.com" class="store-naiin">
+                                       <img src="https://www.naiin.com/img/global/header_logo.png "  width="86" height="34"
+                                       style="height: auto;width: 100px; padding-left: 10%;margin-left: 10%;max-height: inherit;"/>
+                                     </a>
+									 </li>
+									 <li class="top-shipping">
+									 <a href="https://www.naiin.com/how-to-buy/read/1384/">
+									 <i class="fa fa-truck" aria-hidden="true"></i>     ซื้อครบ 600 บาท จัดส่งฟรีทั่วประเทศ</li></a>
+									 <li class="top-shipping">
+									  <a href="https://www.naiin.com/contact-us/">
+									 <i class="fa fa-phone" aria-hidden="true"></i>     ติดต่อสอบถาม 02-4239999 กด 4</a></li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                            <div class="top-header-menu">
+                                <ul>
+                                                                            <li class="dtp"><a href="https://www.naiin.com/register">สมัครสมาชิก</a></li>
+                                        <li class="dtp"><a href="https://www.naiin.com/login">เข้าสู่ระบบ</a></li>
+                                        <li class="top-cart">
+                                            <a href="https://www.naiin.com/cart">
+                                                cart
+                                                <span class="cart-qty">0</span>
+                                            </a>
+                                        </li>
+                                    										<li class="top-menu">
+											<a class="m-main-menu" data-active="0">
+												<span class="line line-1"></span>
+												<span class="line line-2"></span>
+												<span class="line line-3"></span>
+											</a>
+										</li>
+                                </ul>
+								                                
+                                <div class="addtocart-notice-block" style="display:none;">
+                                    <i class="i-check"></i>
+                                     &nbspสินค้าถูกเพิ่มในตระกร้าแล้ว
+                                </div>
+
+                                
+                                <div class="wishlist-notice-block" style="display:none;">
+                                    <i class="i-check"></i>
+                                    &nbspสินค้าถูกเพิ่มใน My wish list แล้ว
+                                </div>
+
+                                
+                                <div class="wishlist-notice-block-remove" style="display:none;">
+                                    <i class="i-check"></i>
+                                     &nbspลบสินค้าออกจาก My wish list แล้ว
+                                </div>
+
+                                <div class="addtoshelf-notice-block" style="display:none;">
+                                    <i class="i-check"></i>
+                                    <span>&nbspสินค้าถูกเพิ่มในชั้นหนังสือแล้ว</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-container">
+                <div class="container">
+                    <div class="rps">
+                      <!-- <div class="row">
+                            <div class="col-sm-12">
+                                <a href="https://www.naiin.com" class="header-logo no-logo"></a>
+                                <a class="m-main-menu" data-active="0">
+                                    <span class="line line-1"></span>
+                                    <span class="line line-2"></span>
+                                    <span class="line line-3"></span>
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="row" >
+                
+                        <div class="col-sm-12">
+                            <div class="top-search">
+                                <div class="top-search-block"   >
+                                    <!--<a href="/search/" class="top-advance-search">
+                                        <i></i>ค้นหา<br>ขั้นสูง
+                                    </a>-->
+                                    
+                                    <form  action="https://www.naiin.com/search-result" class="default-form top-search-form" method="get" >
+                                        <div class="">
+                                            <!--<div class="top-search-ic-block"><i class="ic-top-search"></i></div>-->
+                                          
+                                            <input type="text" class="" id="title" name="title" value="">
+                                            <!--<div class="form-select-template list-select-block">
+                                                <span id="txtTitleName">ทั้งหมด</span>
+                                                <i class="arrow-dropdown"></i>
+                                                <input type="text" class="type-select-template"
+                                                       placeholder="" style="height: 29px;border-top: none;width: 86px;"
+                                                       readonly>
+                                                <input type="hidden" class="" id="" name="book_type_val" value="">
+                                                <ul>
+                                                    <li value="">ทั้งหมด</li>
+                                                                                                            <li value="1">Books</li>
+                                                                                                            <li value="2">Magazines</li>
+                                                                                                            <li value="3">E-Books</li>
+                                                                                                            <li value="4">E-Magazines</li>
+                                                                                                            <li value="8">LifeStyle &amp; Gifts</li>
+                                                                                                    </ul>
+                                            </div> -->
+                                            
+                                                
+                                                
+                                                    
+                                                        
+                                                    
+                                                
+                                            
+                                            <button type="submit" class="search-btn" onCLick="return checkSearch();"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                        </div>
+                                    </form>
+									
+                                </div>
+                                <div class="dtp">
+                                    ﻿<ul class="top-menu"> 
+	<li><a href="/orderstatus/">ติดตามสินค้า</a></li>
+	<li><a href="https://www.naiin.com/payment_inform/">แจ้งการชำระเงิน</a></li>
+	<li><a href="/news-activities/">ข่าวสารและกิจกรรม</a></li>
+	<li><a href="/branches/">สาขา</a></li>
+	<li class="nav-howto-order"><a href="https://www.naiin.com/how-to-buy/read/1125/">วิธีการสั่งซื้อ</a></li>
+</ul>                                </div>
+
+							
+                                <div class="clearfix"> </div>
+                                	
+									<p style="font-size:18px;height:20px;margin-top:0px;line-height:1.0em;margin-bottom:0px;background-color: white;">
+											
+										<span>
+											                                               <a href="https://www.naiin.com/product/detail/36937/" target="_blank">บุพเพสันนิวาส</a> 
+											                                               <a href="https://www.naiin.com/search-result?title=Sotus" target="_blank">SOTUS</a> 
+											                                               <a href="https://www.naiin.com/writer/042340/" target="_blank">บันทึกปิ่น</a> 
+											                                               <a href="https://www.naiin.com/writer/013744/" target="_blank">รอมแพง</a> 
+											                                               <a href="https://www.naiin.com/search-result?title=%E0%B8%A5%E0%B8%B4%E0%B8%82%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%94%E0%B8%87" target="_blank">ลิขิตรักด้ายแดง</a> 
+																					</span>
+									</p>
+								
+								
+							</div>
+                            <div class="rps-menu">
+                                <div class="top-nav-container">
+                                    <!-- Header CSS  -->
+<link rel="stylesheet" href="https://www.naiin.com/css/menu.css">
+<!-- End Header CSS -->
+<!-- JS  -->
+<script src="https://www.naiin.com/js/menu.js"></script>
+<!-- End JS  -->
+
+<div class="navbar-collapse js-navbar-collapse">
+		<ul class="nav navbar-nav mainmenu" id="mainmenu1">
+			<li class="dropdown mega-dropdown">
+				<a href="/promotions/" class="dropdown-toggle d1" data-toggle="dropdown">โปรโมชั่น </a>							
+			</li>
+            <li class="dropdown mega-dropdown">
+    			<a href="https://www.naiin.com/books/" class="dropdown-toggle d1" data-toggle="dropdown">หนังสือ </span></a>							
+			</li>
+            <li class="dropdown mega-dropdown">
+    			<a href="https://www.naiin.com/e-books/" class="dropdown-toggle d1" data-toggle="dropdown">อีบุ๊ค </a>							
+			</li>
+             <li class="dropdown mega-dropdown">
+    			<a href="https://www.naiin.com/magazines/" class="dropdown-toggle d1" data-toggle="dropdown">นิตยสาร </a>							
+			</li>
+            <li class="dropdown mega-dropdown">
+    			<a href="https://www.naiin.com/e-magazines/" class="dropdown-toggle d1" data-toggle="dropdown">อีแม็กกาซีน </a>							
+			</li>
+            <li class="dropdown mega-dropdown">
+    			<a href="https://www.naiin.com/nonbook/" class="dropdown-toggle d1" data-toggle="dropdown">ไลฟ์สไตล์แอนด์กิ๊ฟ </a>							
+			</li>
+        </ul>
+		<ul class="nav navbar-nav mainmenu" id="mainmenu" style="display:none"></ul>
+        <div class="clearfix"></div>
+</div>
+
+                                    <!-- <ul class="main-navigation">
+                                        <li><a href="/promotions/">โปรโมชั่น</a></li>
+                                        <li><a href="https://www.naiin.com/books/">หนังสือ</a></li>
+                                        <li><a href="https://www.naiin.com/e-books/">อีบุ๊ค</a></li>
+                                        <li><a href="https://www.naiin.com/magazines/">นิตยสาร</a></li>
+                                        <li><a href="https://www.naiin.com/e-magazines/">อีแม็กกาซีน</a></li>
+                                        <li><a href="https://www.naiin.com/nonbook/">ไลฟ์สไตล์แอนด์กิ๊ฟ</a></li>
+                                     
+                                    </ul> -->
+                                   
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="rps">
+                                    <div class="menu-account">
+                                        <ul>
+                                                                                            <li class="mt35"><a href="https://www.naiin.com/register">สมัครสมาชิก</a></li>
+                                                <li><a href="https://www.naiin.com/login">เข้าสู่ระบบ</a></li>
+                                                                                    </ul>
+                                    </div>
+                                    ﻿<ul class="top-menu"> 
+	<li><a href="/orderstatus/">ติดตามสินค้า</a></li>
+	<li><a href="https://www.naiin.com/payment_inform/">แจ้งการชำระเงิน</a></li>
+	<li><a href="/news-activities/">ข่าวสารและกิจกรรม</a></li>
+	<li><a href="/branches/">สาขา</a></li>
+	<li class="nav-howto-order"><a href="https://www.naiin.com/how-to-buy/read/1125/">วิธีการสั่งซื้อ</a></li>
+</ul>                                </div>
+                                
+                                   
+                                        
+                                        
+                                       
+                                    
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sticky-block">
+            <div id="main" class="wrapper">
+                <div class="heart x1"></div>
+                <div class="heart x2"></div>
+                <div class="heart x3"></div>
+                <div class="heart x4"></div>
+                <div class="heart x5"> </div>
+                <div class="altheart x6"></div>
+                
+                <meta name="cXenseParse:pageclass" content="article"/>
+
+<meta name="cXenseParse:articleid" content="235122"/>
+
+<meta name="cXenseParse:category" content="Product"/>
+<meta name="cXenseParse:category" content="Books"/>
+<meta name="cXenseParse:category" content="คอมพิวเตอร์/อินเตอร์เน็ต"/>
+<meta name="cXenseParse:category" content="คอมพิวเตอร์/อินเตอร์เน็ต"/>
+<meta name="cXenseParse:taxonomy" content="Product/Books/คอมพิวเตอร์/อินเตอร์เน็ต/คอมพิวเตอร์/อินเตอร์เน็ต"/>
+
+<meta name="cXenseParse:ama-publisher" content="สวัสดี ไอที"/>
+
+
+
+<meta name="cXenseParse:ama-authorurl" content="https://www.naiin.com/writer/021002/"/>
+
+<meta name="cXenseParse:author" content="ศุภชัย สมพานิช"/>
+
+	
+<!-- Header CSS  -->
+<link rel="stylesheet" href="https://www.naiin.com/css/product-list.css">
+<link rel="stylesheet" href="https://www.naiin.com/css/product-detail.css">
+<link rel="stylesheet" href="https://www.naiin.com/owl.carousel/assets/owl.carousel.css">
+<link rel="stylesheet" href="https://www.naiin.com/fancyBox/jquery.fancybox.css">
+<!-- End Header CSS -->
+<!-- JS  -->
+<script src="https://www.naiin.com/owl.carousel/owl.carousel.min.js"></script>
+<script src="https://www.naiin.com/owl.carousel/owl.carousel2.thumbs.min.js"></script>
+<script src="https://www.naiin.com/js/star_rating.js"></script>
+<script src="https://www.naiin.com/js/product-detail.js"></script>
+<script src="https://www.naiin.com/js/product-review.js"></script>
+<script src="https://www.naiin.com/js/product-option.js"></script>
+<script src="https://www.naiin.com/js/wishlist-add.js"></script>
+<script src="https://www.naiin.com/fancyBox/jquery.fancybox.pack.js"></script>
+<script src="https://www.naiin.com/fancyBox/helpers/jquery.fancybox-media.js"></script>
+<script src="https://www.naiin.com/js/jquery.elevatezoom.js"></script>
+<!-- End JS  -->
+<style>
+
+</style>
+
+<script>
+
+function CreateContent(item,result)
+{
+	if (result.Data.Quantity == 0)
+	{
+		return "";
+	}
+	var content = "";
+	var click_url = item.click_url;
+   	var title = item.title;
+    var itemurl = item.url;
+    var imageurl = item.dominantimage;
+			
+   	var author = ""; 
+	if (item.author != undefined)
+	{
+		author = item.author[1];
+	}
+
+	var category = "";
+	if (item["recs-category1"] != undefined)
+	{
+		category = item["recs-category1"].substring(item["recs-category1"].lastIndexOf('|')+1); 
+	}
+			
+    var productid = item.articleid;
+	var authorCode = "";
+	var priceFull = 0;
+    var priceDiscount = 0;
+    var quantity = 0;
+    var rating = 0;
+    var totalReview = 0;
+	var PromotionMemberPercentDiscount = 0;
+	var IsPreorder = "";
+	var PreorderDateFrom = "";
+	var PreorderDateTo = "";
+	var rank = 0;
+
+	authorCode = result.Data.AuthorCode;
+    priceFull = result.Data.FullPrice;
+    priceDiscount = result.Data.SellPrice;
+    quantity = result.Data.Quantity;
+    rating = result.Data.Rating;
+    PromotionMemberPercentDiscount = result.Data.PromotionMemberPercentDiscount;
+    totalReview = result.Data.TotalReview;
+	IsPreorder = result.Data.IsPreorder;
+	PreorderDateFrom = result.Data.PreOrderDateFrom;
+	PreorderDateTo = result.Data.PreOrderDateto;
+	rank = result.Data.Rank;
+
+	content = content + '<div class="item slide"   style="height: 420px;width: 150px!important;position:relative">' 
+	if (PromotionMemberPercentDiscount != 0)
+	{
+		content = content + '<div class="item-tag t-discount"><span></span>ลด '+ PromotionMemberPercentDiscount + '%<i class="sq-blue"></i><i class="sq-ylw"></i></div>';
+	}
+
+	content = content + '<div class="item-img-block"><div class="item-cover">';
+    content = content + '<a href="' + click_url + '"><img src="' + imageurl + '" alt="' + title + '" title="' +title +'"></a>';
+    content = content + '<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="' + productid + '">Quick View</span></div></div>';
+    content = content + '<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;"><a href="' + click_url + '" title="' + title + '">' + title + '</a></p>';
+ 
+	// author - TODO: get author url
+	content = content + '<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">' + author + '</p>';
+            
+	content = content + '<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">'
+	content = content + '<a class="inline-block" href="https://www.naiin.com/' + category.toLowerCase() + '/">' + category + '</a></p>';
+ 
+    // rating block - TODO: get product rating using productid
+    content = content + '<div class="book-rating-block"><div class="rating-block">';
+
+	ratingLi = "";
+			
+	for(var r = 0;r < 5; r++)
+	{
+		if (rating >= 1)
+		{
+			ratingLi += '<li class="star"></li>';
+		}
+		else if (rating > 0)
+		{
+			ratingLi += '<li class="star-half"></li>';
+		}
+		else{
+			ratingLi +=  '<li class=""></li>';
+		}
+		rating--;
+	}			
+
+    content = content + '<ul>' + ratingLi  + '</ul>';
+    content = content + '</div><span class="item-vote">'+ totalReview + ' โหวต</span></div>';
+                 
+    // pricing - TODO: get product pricing using productid
+	content = content + '<div class="price-block">' ;
+	if (priceFull > priceDiscount)
+	{
+		content = content + '<p class="sale-price"><i></i>' + priceFull.toFixed(2) + '</p>' ;
+		content = content + '<p class="txt-price">' + priceDiscount.toFixed(2) + ' บาท</p>';
+	}
+	else {
+		content = content + '<p class="txt-price"><i></i>' + priceFull.toFixed(2) + '</p>' ;
+	} 
+	content = content  + '</div>';
+            // add to cart button
+	content = content + '<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">';   
+    content = content + '<div style="margin-left:5px"><a class="btn-addtocart-ylw-small cxense-addtocart" data-productid = "' + productid + '" data-producttypeid="1" >Add to Cart</a></div>'
+			
+	if (rank > 0)
+	{
+		content = content + '<div class="rank-badge">' ;
+		content = content + '	<div class="rbadge">';
+		content = content + '<span>' + rank + '</span></div></div>';
+	}
+			
+	content = content + '</div></div>';
+	return content;
+}
+
+function locadCxenseRecom(data, context) {      
+    var items = data.response.items;
+	var related = "";
+	var cItem = [];
+	var maxitem = 24;
+           
+    for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+			var productid = item.articleid;
+			if (productid != undefined){
+            $.ajax({
+                    async: false,
+                    type: 'GET',
+                    url: "https://api.naiin.com:449/Master/getProductInfo?ProductId=" + productid ,
+                    success: function(result) {
+						var content = CreateContent(item,result);
+						if (content != "")
+						{
+							cItem.push(productid);
+							related += content;
+						}
+                    },
+					error:function(err){
+						$("#cxense-div").hide();
+						return;
+					}
+                });
+			}
+			if (cItem.length == maxitem){
+				break;
+			}
+			
+      }
+   
+	var relatedDiv = document.getElementById("cx-recom");
+	relatedDiv.innerHTML = relatedDiv.innerHTML + related;
+			  
+			var winW = $(window).width();
+				if(winW < 993 ) {
+					var margin = 35;
+				}
+				else {
+					var margin = 18;
+				}
+		
+
+			$("#cx-recom").owlCarousel({
+				loop: true,
+				margin:margin,
+				autoWidth: true,
+				nav:true,
+				slideBy: 6,
+				navSpeed: 150,
+				lazyLoad: true,
+				responsive:{
+					0:{
+						items:2
+					},
+					768:{
+						items:3
+					},
+					1000:{
+						items:6
+					}
+				}
+			});
+
+	}
+		  
+		var _url = "https://www.naiin.com/product/detail/235122/"; 
+
+		var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+		cX.callQueue.push(['insertWidget', {
+        			widgetId: 'e8040d87de330df0ee70f526d69a2b6bc389489c',		
+        			ctx: _url ,
+        			renderFunction: locadCxenseRecom
+    			},
+					{"context" : {"parameters" : [{"key" : "category", 
+													"value" : "Books"}]
+								}
+					}
+		]);
+
+</script>
+
+
+<script>
+
+	$(document).ready(function () { 
+			//var _price = 246.05;
+			fbq('track', 'ViewContent', {
+				content_type: 'product',
+				content_ids: ['235122'], // Product ID
+				value: 246.05 ,   
+				currency: 'THB'
+			});
+
+			$("#click-add-to-cart").click(function(){
+
+					fbq('track', 'AddToCart', {
+						value: 246.05 ,
+						currency: 'THB',
+						content_ids: ['235122'],
+						content_type: 'product'
+					});
+
+			});
+
+			$("#wishlist_submit").click(function(){
+
+					fbq('track', 'AddToWishlist', {
+						value: 246.05,
+						currency: 'THB',
+						content_ids: ['235122'],
+						content_type: 'product'
+					});
+			});
+
+
+		var url = window.location.hash;
+		url = url.substring(url.indexOf('#') + 1);
+
+		if (url != "" && url == "cxrecs_s"){
+			$('.btn-addtocart-ylw').addClass("cxense-addtocart");
+		}
+
+	});	
+</script>
+
+
+<div class="content-container product-detail inner-page" itemscope="" itemtype="http://schema.org/Book">
+	<meta itemprop="url" content="https://www.naiin.com/product/detail/235122/">
+	<div class="container" >
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="breadcrumbs mb20">
+					<ul>
+						<li><a href="https://www.naiin.com/">หน้าแรก</a></li>
+						<li><a href="https://www.naiin.com/books/">หนังสือ</a></li>
+						<li>คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="bookdetail-row-1 book-detail-block mb40">
+			<div class="row">
+				<form action="https://www.naiin.com/product/cart" method="POST">
+					<input type="hidden" name="_token" value="RjqYaGmHmgGvuT1II9x4jjfDvRIuI6Fnmolyfdn5">
+					<div class="col-md-4">
+                        <div class="book-image-example mb10" style="margin: auto;">
+                            <div id="bookImage" class="" data-slider-id="1">
+                                                                                                            <div class="product-sample" data-index="0">
+																							<a rel="details" href="https://storage.naiin.com/system/application/bookstore/resource/product/201805/235122/1000207471_front_XXXL.jpg" class="fancybox" title="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017">
+                                                <img src="https://storage.naiin.com/system/application/bookstore/resource/product/201805/235122/1000207471_front_XXL.jpg" alt="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017">
+                                            </a>
+											                                            
+                                        </div>
+                                                                            <div class="product-sample" data-index="1">
+																							<a rel="details" href="https://storage.naiin.com/system/application/bookstore/resource/product/201805/235122/1000207471_back_XXXL.jpg" class="fancybox" title="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017">
+                                                <img src="https://storage.naiin.com/system/application/bookstore/resource/product/201805/235122/1000207471_back_XXL.jpg" alt="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017">
+                                            </a>
+											                                            
+                                        </div>
+                                                                                                </div>
+                        </div>
+
+											</div>
+					<div class="col-md-5">
+						<div class="bookdetail-container" >
+							 <meta itemprop="description" content="ศึกษาไวยากรณ์การใช้งานภาษา C# อัพเดตถึงเวอร์ชัน 7.x การใช้งาน Entity Framework ร่วมกับระบบฐานข้อมูล SQL Server การใช้งาน EF Core 2.x แบบ Database First"/>
+							 <meta itemprop="numberOfPages" content="276" />
+							 <meta itemprop="genre" content="คอมพิวเตอร์/อินเตอร์เน็ต" />
+							 <meta itemprop="image" content="https://storage.naiin.com/system/application/bookstore/resource/product/201805/235122/1000207471_front_XXL.jpg" />
+							 
+
+							<h1 class="title-topic" itemprop="name">คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017</h1>
+						
+							<div class="bookdetail-review-block">
+								 
+
+								<div class="bookdetail-rating rating-block" >
+									
+										<ul>
+									
+												
+																																							<li class=""></li>
+																																																																	<li class=""></li>
+																																																																	<li class=""></li>
+																																																																	<li class=""></li>
+																																																																	<li class=""></li>
+																																																	</ul>
+										
+									</div>
+									<p style="display: inline-block;"><a href="#boxReview" id="review">
+									0 โหวต
+									</a></p>
+									<a href="https://www.naiin.com/product-review-detail/235122?action=review" class="bookdetail-write-review" 
+												title="เขียนรีวิว คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017"><i></i>เขียนรีวิว</a>
+								</div> 
+							
+							<div class="bookdetail-share-block">
+								<p class="title-topic">แชร์ : </p>
+								<ul class="social-share-icons">
+									<li><a href="https://www.naiin.com/email-form/235122/" class="ic-share-mail" target="_blank" title="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017"></a></li>
+									<li><a href="http://twitter.com/share?url=https://www.naiin.com/product/detail/235122/" class="ic-share-tw" target="_blank" title="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017"></a></li>
+									<li><a href="http://www.facebook.com/sharer.php?u=https://www.naiin.com/product/detail/235122/" class="ic-share-fb" target="_blank" title="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017"></a></li>
+									<li><a href="https://plus.google.com/share?url=https://www.naiin.com/product/detail/235122/" class="ic-share-gp" target="_blank" title="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017"></a></li>
+								</ul>
+							</div>
+							<div class="bookdetail-order-block mt15">
+																	<div class="">
+										<input type="hidden" name="product" id="product" value="235122">
+										<input type="hidden" name="product_type_id" id="product_type_id" value="1">
+																					<meta itemprop="bookFormat" content="Paperback" />
+										 
+										<input type="hidden" id="product_option_cal" value="false">
+										<input type="hidden" name="product_name" value="คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017" />
+										<ul class="bookdetail-book-cover-block">
+																							<li class="select-option" data-id="235122" data-pricefull="259.00" data-discountprice="246.05">
+													<input class="option-checked" type="radio" checked>
+													
+																											<label for="235122">ปกอ่อน <br>246.05 บาท</label>
+																									</li>
+																					</ul>
+									</div>
+																
+								<div class="mt30">
+									<ul class="bookdetail-list">
+										<li>ผู้เขียน : <a class="inline-block" href="https://www.naiin.com/writer/021002/">
+											<span itemprop="author" itemtype="http://schema.org/Person"  itemscope="">
+												<meta itemprop="url" content ="https://www.naiin.com/writer/021002"/>
+												<span itemprop="name">
+													ศุภชัย สมพานิช
+												</span>
+											</span></a></li>
+										<li>สำนักพิมพ์ :
+											<a class="inline-block" href="https://www.naiin.com/publisher/000542"> 
+												<span itemprop="publisher" itemtype="http://schema.org/Organization" itemscope="">
+													<meta itemprop="url" content="https://www.naiin.com/publisher/000542" />
+													<span itemprop="name"> 
+														สวัสดี ไอที
+													</span>
+												</span>
+											</a>
+										</li>
+										<li>หมวดหมู่ :
+											<a class="inline-block" href="https://www.naiin.com/category?category_1_code=16&amp;product_type_id=1">
+												คอมพิวเตอร์/อินเตอร์เน็ต
+											</a>
+											<a class="inline-block" href="https://www.naiin.com/category?categoryLv2Code=64&amp;category_1_code=16&amp;product_type_id=1">
+												คอมพิวเตอร์/อินเตอร์เน็ต
+											</a>
+										</li>
+										<li>ประเภทของสินค้า : <a class="inline-block" href="https://www.naiin.com/books/">Books</a></li>
+						 				<li>บาร์โค้ด : <span itemprop="isbn">8859165000521</span></li>
+									</ul>
+																			ศึกษาไวยากรณ์การใช้งานภาษา C# อัพเดตถึงเวอร์ชัน 7.x การใช้งาน Entity Framework ร่วมกับระบบฐานข้อมูล SQL Server การใช้งาน EF Core 2.x แบบ Database First
+									 
+
+									
+									
+								</div>
+
+								
+								
+								<div class="bookdetail-sample mt25">
+																	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+							<div id="div-less" style="text-align:right;margin-right:1em;color:red;display:none;">
+								 <span>สินค้าเหลือน้อย</span>
+							</div>
+							<div class="bookdetail-qty-block">
+								<div class="bookdetail-qty-title">จำนวน : </div>
+								<input type="hidden" class="quantity" name="quantity" value="1">
+								<div class="productqty-select-block">
+									<p class="productqty-select-header select-border" data-status="0">1</p>
+																			<ul id="qtyQV">
+																							<li data-value="1">1</li>
+																							<li data-value="2">2</li>
+																					</ul>
+																	</div>
+								<div class="clearfix"></div>
+							</div>
+
+						<div class="book-form-block" data="" 
+							itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+							<div class="price-block">
+									<meta itemprop="priceCurrency" content="THB" />
+																	<p class="price"><span class="sale-price"><i></i><span id="full-price">259.00 บาท</span></span></p>
+									<meta itemprop="price" content="246.05"/>
+									<p class="price"><span id="discount-price" >246.05 บาท</span></p>
+															</div>
+
+															<p>"คุณประหยัดไป 12.95 บาท (5.00 %)"<br></p>
+							
+															<p>"จำนวนคะแนนที่ได้รับ 9 แต้ม"</p>
+							
+							 
+
+							<input type="hidden" id="stock" value="2">
+							
+																	<script>
+										$("#div-less").show();
+									</script>
+									
+								<link itemprop="availability" href="http://schema.org/InStock">
+									<a id="click-add-to-cart" class="btn-addtocart-ylw mb10" title="เพิ่มสินค้า คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017 ไปยังตะกร้า">Add to cart</a>
+									
+													
+
+							
+							<a id="wishlist_submit" title="เพิ่มสินค้า คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017 ไปยัง wish list "
+							   class="wishlist btn-addtowishlist mt20 "
+							   data-action="add">
+								<i class="ic-wishlist"></i>
+								Add to Wish List
+							</a>
+						</div>
+						
+						<div class="view-branch">
+							<a href="https://www.naiin.com/branches?ProductID=235122&amp;ProductName=%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2+VISUAL+C%23+2017" class="btn-view-branch" title="ดูสาขาที่มีจำหน่าย คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017"><i class="ic-naiin-logo"></i>ดูสาขาที่มีสินค้า</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		
+
+					<div class="book-relate-block">
+				<div class="row">
+					<div class="col-sm-12">
+						<h2 class="title-topic mb10">สินค้าที่เกี่ยวข้อง <span id="pName">: คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017</span> <a href="https://www.naiin.com/category?book_id=235122&amp;product_type_id=1" class="lnk-view-all pull-right">ดูทั้งหมด ></a></h2>
+						<div class="row">
+							<div id="relateProduct" class="product-list mt15 mb15">
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/227702/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201801/227702/1000203647_front_XXL.jpg" alt="คู่มือเขียนโปรแกรมด้วยภาษา C++" title="คู่มือเขียนโปรแกรมด้วยภาษา C++">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="227702">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/227702/" title="คู่มือเขียนโปรแกรมด้วยภาษา C++">
+				
+				คู่มือเขียนโปรแกรมด้วยภาษา C++
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>259.00</p>
+			<p class="txt-price">246.05 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+						
+				<a class="btn-addtocart-ylw-small" data-productid = "227702" 
+				data-producttypeid="1" >Add to Cart</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/141037/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201406/141037/53917122151ed_XXL.jpg" alt="Professional Android Programming" title="Professional Android Programming">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="141037">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/141037/" title="Professional Android Programming">
+				
+				Professional Android Programming
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>275.00</p>
+			<p class="txt-price">261.25 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/36259/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201106/36259/9786162001406_XXL.jpg" alt="การเขียนโปรแกรมอย่างมืออาชีพด้วย.NET FRA" title="การเขียนโปรแกรมอย่างมืออาชีพด้วย.NET FRA">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="36259">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/36259/" title="การเขียนโปรแกรมอย่างมืออาชีพด้วย.NET FRA">
+				
+				การเขียนโปรแกรมอย่างมืออาชีพด้วย.NET FRA
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>450.00</p>
+			<p class="txt-price">427.50 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/210220/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201703/210220/1000194400_front_XXL.jpg" alt="คู่มือพัฒนา Android &amp; iOS Apps ด้วยภาษา C#" title="คู่มือพัฒนา Android &amp; iOS Apps ด้วยภาษา C#">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="210220">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/210220/" title="คู่มือพัฒนา Android &amp; iOS Apps ด้วยภาษา C#">
+				
+				คู่มือพัฒนา Android &amp; iOS Apps ด้วยภาษา C#
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>219.00</p>
+			<p class="txt-price">208.05 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/125929/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201310/125929/526f64e01d8e6_XXL.gif" alt="Basic Objective C" title="Basic Objective C">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="125929">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/125929/" title="Basic Objective C">
+				
+				Basic Objective C
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>265.00</p>
+			<p class="txt-price">251.75 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/201255/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201609/201255/1000189912_front_XXL.jpg" alt="Professional Visual C# 2015" title="Professional Visual C# 2015">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="201255">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/201255/" title="Professional Visual C# 2015">
+				
+				Professional Visual C# 2015
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>350.00</p>
+			<p class="txt-price">332.50 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/171282/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201507/171282/559cabd3b1c81_XXL.jpg" alt="คู่มือเรียนและใช้งานภาษา C++ +CD" title="คู่มือเรียนและใช้งานภาษา C++ +CD">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="171282">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/171282/" title="คู่มือเรียนและใช้งานภาษา C++ +CD">
+				
+				คู่มือเรียนและใช้งานภาษา C++ +CD
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>239.00</p>
+			<p class="txt-price">227.05 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/63322/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201206/63322/4fe01e8017dd8_XXL.gif" alt="พัฒนาระบบบริหารงานบุคคลด้วย VB &amp; VC#" title="พัฒนาระบบบริหารงานบุคคลด้วย VB &amp; VC#">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="63322">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/63322/" title="พัฒนาระบบบริหารงานบุคคลด้วย VB &amp; VC#">
+				
+				พัฒนาระบบบริหารงานบุคคลด้วย VB &amp; VC#
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>275.00</p>
+			<p class="txt-price">261.25 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/107741/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201303/107741/5153be737cd31_XXL.gif" alt="Basic HTML5 with CSS3 &amp; jQuery" title="Basic HTML5 with CSS3 &amp; jQuery">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="107741">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/107741/" title="Basic HTML5 with CSS3 &amp; jQuery">
+				
+				Basic HTML5 with CSS3 &amp; jQuery
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>250.00</p>
+			<p class="txt-price">237.50 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/136869/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201403/136869/5333aa2e60998_XXL.gif" alt="คู่มือเรียนและเขียนโปรแกรมด้วยภาษา C" title="คู่มือเรียนและเขียนโปรแกรมด้วยภาษา C">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="136869">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/136869/" title="คู่มือเรียนและเขียนโปรแกรมด้วยภาษา C">
+				
+				คู่มือเรียนและเขียนโปรแกรมด้วยภาษา C
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>199.00</p>
+			<p class="txt-price">189.05 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/209871/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201702/209871/1000194228_front_XXL.jpg" alt="คู่มือสร้างเว็บไซต์แบบ Responsive ด้วย ASP.NET &amp; .NET Core MVC" title="คู่มือสร้างเว็บไซต์แบบ Responsive ด้วย ASP.NET &amp; .NET Core MVC">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="209871">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/209871/" title="คู่มือสร้างเว็บไซต์แบบ Responsive ด้วย ASP.NET &amp; .NET Core MVC">
+				
+				คู่มือสร้างเว็บไซต์แบบ Responsive ด้วย ASP.NET &amp; .NET Core MVC
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>350.00</p>
+			<p class="txt-price">332.50 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/199496/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201608/199496/1000189264_front_XXL.jpg" alt="คู่มือการเขียนโปรแกรม JAVA สำหรับ Android Apps" title="คู่มือการเขียนโปรแกรม JAVA สำหรับ Android Apps">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="199496">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/199496/" title="คู่มือการเขียนโปรแกรม JAVA สำหรับ Android Apps">
+				
+				คู่มือการเขียนโปรแกรม JAVA สำหรับ Android Apps
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>219.00</p>
+			<p class="txt-price">208.05 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/119978/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201308/119978/52047cb27e4aa_XXL.gif" alt="คู่มือเรียนและใช้งาน Visual Basic" title="คู่มือเรียนและใช้งาน Visual Basic">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="119978">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/119978/" title="คู่มือเรียนและใช้งาน Visual Basic">
+				
+				คู่มือเรียนและใช้งาน Visual Basic
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>259.00</p>
+			<p class="txt-price">246.05 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/143260/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201407/143260/53c4f4b8858fe_XXL.jpg" alt="Professional ASP.NET Programming" title="Professional ASP.NET Programming">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="143260">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/143260/" title="Professional ASP.NET Programming">
+				
+				Professional ASP.NET Programming
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>275.00</p>
+			<p class="txt-price">261.25 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+																	<div class="item slide"   style="height: 400px;width: 150px!important;position:relative">
+	
+	<div class="item-img-block">
+		<div class="item-cover">
+			<a href="https://www.naiin.com/product/detail/43844/">
+				<img src="https://storage.naiin.com/system/application/bookstore/resource/product/201203/43844/4f6192f329f64_XXL.gif" alt="พัฒนา Web App แบบมืออาชีพด้วย ASP.NET" title="พัฒนา Web App แบบมืออาชีพด้วย ASP.NET">
+			</a>
+			<!--<span id="btn-quickview" class="btn-green-stroke lnk-quick-view" data-type="book" data-productid="43844">Quick View</span> -->
+		</div>
+	</div>
+	<div class="item-details mt15" >
+		<p class="txt-normal" style="overflow: hidden;max-height: 2em;height:2em;">
+			<a href="https://www.naiin.com/product/detail/43844/" title="พัฒนา Web App แบบมืออาชีพด้วย ASP.NET">
+				
+				พัฒนา Web App แบบมืออาชีพด้วย ASP.NET
+				
+			</a>
+		</p>
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+			<a class="inline-block" href="https://www.naiin.com/writer/021002/">
+					ศุภชัย สมพานิช
+			</a>
+		</p>
+		
+		<p class="txt-light" style="max-height:1em;height:1em;overflow: hidden;">
+							<a class="inline-block" href="https://www.naiin.com/books/">
+						Books
+				</a>
+						
+		</p>
+		<div class="book-rating-block">
+			<div class="rating-block">
+				<ul>
+					
+																		<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+																								<li class=""></li>
+						
+															</ul>
+			</div>
+			<span class="item-vote">0 โหวต</span>
+		</div>
+	</div>
+	<div class="price-block">
+					<p class="sale-price"><i></i>315.00</p>
+			<p class="txt-price">299.25 บาท</p>
+			</div>
+	
+	<div style="bottom:0px;position: absolute;text-align:center;width:100%;margin:0 auto;display:inline-block">	
+		<div style="margin-left:5px">
+									<a class="btn-addtocart-ylw-small disable non-pointer gray-button" > Out of Stock</a>
+							</div>
+	</div>
+	
+	</div>
+															</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<div class="book-detail-additional-block mt10">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="title-topic mb10">ข้อมูลเพิ่มเติม  : คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017</h2>
+					<ul>
+						<li>สำนักพิมพ์ : <a class="inline-block" title="สวัสดี ไอที"
+										href="https://www.naiin.com/publisher/000542">สวัสดี ไอที</a></li>
+						<li>บาร์โค้ด : 8859165000521</li>
+						<li>จำนวนหน้า : 276</li>
+						<li>ขนาด : 16.9 x 22.9 x 2.8 CM</li>
+						<li>น้ำหนัก : 0.545 KG</li>
+						<li>หมวดหมู่ :
+							<a class="inline-block" title="คอมพิวเตอร์/อินเตอร์เน็ต"
+								href="https://www.naiin.com/category?category_1_code=16&amp;product_type_id=1">
+								คอมพิวเตอร์/อินเตอร์เน็ต
+							</a>
+							<a class="inline-block" title="คอมพิวเตอร์/อินเตอร์เน็ต"
+								href="https://www.naiin.com/category?categoryLv2Code=64&amp;category_1_code=16&amp;product_type_id=1">
+								คอมพิวเตอร์/อินเตอร์เน็ต
+							</a>
+						</li>
+					</ul>
+											<br/>
+						<h2 class="title-topic mb10">รายละเอียด :  คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017</h2>
+						<P><STRONG>คู่มือเขียนโปรแกรมด้วย VISUAL C# 2017</STRONG></P>
+<P>เนื้อหาของหนังสือเล่มนี้มุ่งเน้นที่จะนำเสนอความก้าวหน้าของตัวภาษา C# และ .NET Core ว่า มีฟีเจอร์อะไรบ้างที่นักพัฒนาสาย .NET ต้องเรียนรู้ เพื่อให้ทันกับความก้าวหน้าในยุคปัจจุบัน&nbsp;</P>
+										
+										
+											<br/>
+						<h2 class="title-topic mb10">สารบัญ</h2>
+						<ul class="book-index">
+							<UL>
+<LI>CHAPTER 1 เตรียมความพร้อมก่อนเข้าสู่โลกของ C#</LI>
+<LI>CHAPTER 2 เรียนรู้และใช้งานไวยากรณ์เบื้องต้น</LI>
+<LI>CHAPTER 3 การใช้คำสั่งควบคุม และการตัดสินใจ</LI>
+<LI>CHAPTER 4 ฟังกืชั่น (Function)</LI>
+<LI>CHAPTER 5 พื้นฐานการเขียนโปรแกรมเชิงวัตถุในภาษา Visual C#</LI></UL>
+							
+						</ul>
+										
+					
+															
+									</div>
+			</div>
+		</div>
+		<a name="review"></a>
+	</div>
+	
+	<div class="review-total-block mt30" id="boxReview">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2 class="title-topic">รีวิว</h2>
+					<div class="bookdetail-rating-scores" >
+						<span id="customerreview" class="ic-customerreview"></span>
+						<div class="bookdetail-scores rating-block">
+															<ul>
+									
+																														<li class=""></li>
+										
+																																								<li class=""></li>
+										
+																																								<li class=""></li>
+										
+																																								<li class=""></li>
+										
+																																								<li class=""></li>
+										
+																											</ul>
+						</div>
+						<p class="vote-scores"><span>0 โหวต </span></p>
+						<p class="vote-point">0 จาก 5 คะแนน </p>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bookreview-container">
+		<div class="review-scorebar-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="book-scorebar">
+							<ul>
+																	<li>
+										<span class="rate-star">5 Star</span>
+										<div class="meter-gauge">
+											<span style="width: 0%;"></span>
+										</div>
+										<input type="hidden" value ="TEST" />
+										<span class="scores">0%</span>
+									</li>
+																	<li>
+										<span class="rate-star">4 Star</span>
+										<div class="meter-gauge">
+											<span style="width: 0%;"></span>
+										</div>
+										<input type="hidden" value ="TEST" />
+										<span class="scores">0%</span>
+									</li>
+																	<li>
+										<span class="rate-star">3 Star</span>
+										<div class="meter-gauge">
+											<span style="width: 0%;"></span>
+										</div>
+										<input type="hidden" value ="TEST" />
+										<span class="scores">0%</span>
+									</li>
+																	<li>
+										<span class="rate-star">2 Star</span>
+										<div class="meter-gauge">
+											<span style="width: 0%;"></span>
+										</div>
+										<input type="hidden" value ="TEST" />
+										<span class="scores">0%</span>
+									</li>
+																	<li>
+										<span class="rate-star">1 Star</span>
+										<div class="meter-gauge">
+											<span style="width: 0%;"></span>
+										</div>
+										<input type="hidden" value ="TEST" />
+										<span class="scores">0%</span>
+									</li>
+															</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="review-block mt25">
+			<div class="container">
+				
+							</div>
+		</div>
+	</div>
+
+		<div class="container" style="margin-top: 10px;">
+		<div style="display: inline-block;">
+			<a href="https://www.naiin.com/product/detail/235121/"> < รายการก่อนหน้า </a>
+		</div>
+
+		<div style="float: right;    	display: inline-block;">
+			<a href="https://www.naiin.com/product/detail/235123/"> รายการถัดไป > </a>
+		</div>
+	</div>
+
+</div>
+
+
+
+<div id="quickview" class="quickview-product">
+</div>
+<div class="qv-bookdetail-bg"></div>
+
+            </div>
+                    </div>
+
+        <div id="dialog" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="footer-info-container">
+                                <div class="row">
+                                    <div class="col-md-4 ft-info-block">
+                                        <p class="title-topic mb15">รับข่าวสารจากนายอินทร์ <i class="menu-expand"></i></p>
+                                        <div class="ft-close">
+                                            <form action="https://www.naiin.com/subscribe" method="POST" id="subscribe-form" class="default-form ft-form">
+                                                <input type="hidden" name="_token" value="RjqYaGmHmgGvuT1II9x4jjfDvRIuI6Fnmolyfdn5">
+                                                <input type="text" name="subscribe">
+                                                <button type="submit" class="submit-btn">ส่ง</button>
+                                                <span class="ft-subscribe-txt"></span>
+                                            </form>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="col-md-4 ft-info-block">
+                                        <p class="title-topic mb15">เว็บไซต์ในเครืออมรินทร์<i class="menu-expand"></i></p>
+                                        <div class="ft-close">
+                                            <div class="ft-site-block">
+                                                <p class="list-select-title select-border" data-status="0">Select site</p>
+                                                <ul id="ftSite">
+                                                                                                                                                                        <li><a href='http://amarin.co.th' title='Amarin.co.th' target='_blank'>Amarin.co.th</a></li>
+                                                                                                                    <li><a href='http://baanlaesuan.com' title='BaanLaeSuan Magazine' target='_blank'>BaanLaeSuan Magazine</a></li>
+                                                                                                                    <li><a href='http://www.baanlaesuan.com/roommag/' title='Room Magazine' target='_blank'>Room Magazine</a></li>
+                                                                                                                    <li><a href='http://www.baanlaesuan.com/myhomemag/' title='My Home Magazine' target='_blank'>My Home Magazine</a></li>
+                                                                                                                    <li><a href='http://praew.com' title='Praew Magazine' target='_blank'>Praew Magazine</a></li>
+                                                                                                                    <li><a href='http://sudsapda.com' title='SudSapDa Magazine' target='_blank'>SudSapDa Magazine</a></li>
+                                                                                                                    <li><a href='http://www.goodlifeupdate.com/category/healthy-body/' title='Cheewajit Magazine' target='_blank'>Cheewajit Magazine</a></li>
+                                                                                                                    <li><a href='http://www.goodlifeupdate.com/category/healthy-food/' title='Health &amp; Cuisine' target='_blank'>Health &amp; Cuisine </a></li>
+                                                                                                                    <li><a href='http://www.goodlifeupdate.com/category/healthy-mind/' title = 'Secret Magazine' target = '_blank'> Secret Magazine </a></li>
+                                                                                                                    <li><a href='http://www.ngthai.com/' title = 'National Geographic Thai' target = '_blank' > National Geographic Thai</a></li>
+                                                                                                                    <li><a href='http://praewwedding.com/' title = 'Praew Wedding Magazine' target = '_blank' > Praew Wedding Magazine </a></li>
+                                                                                                                    <li><a href='https://www.amarinbabyandkids.com/' title = 'Amarin Baby and Kids' target = '_blank'> Amarin Baby and Kids </a></li>
+                                                                                                                    <li><a href='https://www.amarinbooks.com/' title = 'Amarin Books' target = '_blank'> Amarin Books </a></li>
+                                                                                                                    <li><a href='http://www.amarinphotobank.com/' title = 'Amarin Photo Bank' target = '_blank'> Amarin Photo Bank</a></li>
+                                                                                                                                                            </ul>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="col-md-4 ft-info-block" id="promocode">
+                                        <p class="title-topic mb15">นายอินทร์โปรโมโค้ด<i class="menu-expand"></i></p>
+                                        <div class="ft-close">
+                                            <form action="https://www.naiin.com/profile/promo-code" id="promocode-form" method="POST" class="default-form ft-form">
+                                                <input type="hidden" name="_token" value="RjqYaGmHmgGvuT1II9x4jjfDvRIuI6Fnmolyfdn5">
+                                                <input type="text" name="promocode">
+                                                <button type="submit" class="submit-btn">ส่ง</button>
+                                                <span class="ft-subscribe-txt">
+                                                    
+                                                    <!--(!empty($errors->get('errorMessageCoupon')) ? '<span class="text-error">'.$errors->first().'</span>' : '')   -->
+                                                </span>
+                                            </form>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-nav">
+                            <div class="ft-nav ft-nav-top">
+                                <div class="col-md-2">
+                                    <p class="ft-title">ทางลัด<i class="menu-expand"></i></p>
+                                    <div class="ft-close">
+                                        <ul>
+                                            <li><a href="https://www.naiin.com/category?type_book=best_seller&amp;product_type_id=1">หนังสือขายดี</a></li>
+                                            <li><a href="https://www.naiin.com/category?type_book=new_arrival&amp;product_type_id=1">หนังสือใหม่</a></li>
+                                            <li><a href="https://www.naiin.com/category?type_book=recommend&amp;product_type_id=1">หนังสือแนะนำ</a></li>
+                                            <li><a href="https://www.naiin.com/category?type_book=coming_soon&amp;product_type_id=1">หนังสือใกล้วางจำหน่าย</a></li>
+                                            <li><a href="https://www.naiin.com/product/view-all-author-publisher?list_of=publisher&amp;product_type_id=1">สำนักพิมพ์</a></li>
+                                            <li><a href="https://www.naiin.com/product/view-all-author-publisher?list_of=author&amp;product_type_id=1">นักเขียน</a></li>
+                                            <li><a href="/news-activities/">ข่าวสารและกิจกรรม</a></li>
+                                            <li><a href="https://www.naiin.com/review-bookmate/">รีวิวโดยบุ๊คเมท</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ft-nav">
+                                <div class="col-md-2">
+                                    <p class="ft-title">สินค้า<i class="menu-expand"></i></p>
+                                    <div class="ft-close">
+                                        <ul>
+                                            <li><a href="/books/">หนังสือ</a></li>
+                                            <li><a href="/e-books/">อีบุ๊ค</a></li>
+                                            <li><a href="/magazines/">นิตยสาร</a></li>
+                                            <li><a href="/e-magazines/">อีแม็กกาซีน</a></li>
+                                            <li><a href="/nonbook/">ไลฟ์สไตล์แอนด์กิ๊ฟ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ft-nav">
+                                <div class="col-md-2">
+                                    <p class="ft-title">ช่วยเหลือ<i class="menu-expand"></i></p>
+                                    <div class="ft-close">
+                                        <ul>
+											
+                                            <li><a href="https://www.naiin.com/how-to-buy/read/1125/">วิธีการสั่งซื้อ</a></li>
+                                            <li><a href="https://www.naiin.com/how-to-buy/read/1125/">การชำระเงิน</a></li>
+                                            <li><a href="https://www.naiin.com/how-to-buy/read/1384/">การจัดส่ง</a></li>
+                                            <li><a href="https://www.naiin.com/payment_inform/">แจ้งชำระเงิน</a></li>
+                                            <li><a href="https://www.naiin.com/how-to-buy/read/783/">คำถามที่พบบ่อย</a></li>
+                                            <li><a href="https://www.naiin.com/unsubscribe/">ยกเลิกการรับข่าวสาร</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ft-nav">
+                                <div class="col-md-2">
+                                    <p class="ft-title">เกี่ยวกับเรา<i class="menu-expand"></i></p>
+                                    <div class="ft-close">
+                                        <ul>
+                                            <li><a href="https://www.naiin.com/about-us/">เกี่ยวกับร้านนายอินทร์</a></li>
+                                            <li><a href="https://www.naiin.com/contact-us/">ติดต่อเรา</a></li>
+                                            <li><a href="https://www.naiin.com/term-and-condition/">เงื่อนไขการใช้งาน</a></li>
+                                            <li><a href="https://www.naiin.com/privacy-policy/">นโยบายความเป็นส่วนตัว</a></li>
+                                            <li><a href="https://www.naiin.com/branches/">ที่ตั้งสาขา</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ft-nav">
+                                <div class="col-md-2">
+                                    <p class="ft-title">ติดต่อเรา<i class="menu-expand"></i></p>
+                                    <div class="ft-close">
+                                        <ul class="social-icons">
+                                            <li><a href="https://www.naiin.com/how-to-buy/read/1399/" class="ft-icon ic-line"></a></li>
+                                            <li><a href="https://www.facebook.com/naiinfanclub/" target="_blank" class="ft-icon ic-fb"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ft-nav">
+                                <div class="col-md-2">
+                                    <p class="ft-title">แอพพลิเคชั่น<i class="menu-expand"></i></p>
+                                    <div class="ft-close">
+                                        <ul class="applications">
+                                            <li class="ft-icon ic-naiinpann">
+                                                <span class="naiinpann-txt">
+                                                    DOWNLOAD<br>NAIINPANN HERE!
+                                                </span>
+                                            </li>
+                                            <li><a href="https://itunes.apple.com/th/app/naiinpann-online-bookstore/id568007644?l=en&mt=8" class="ft-icon ic-appstore" target="_blank">
+                                                </a></li>
+                                            <li><a href="https://play.google.com/store/apps/details?id=com.askmedia.naiinpann" class="ft-icon ic-googleplay" target="_blank"></a></li>
+                                            <li><a href="https://www.naiin.com/e-news/2013/DownloadNaiinPann/PC-30-5-13/e-news-Download.html" class="ft-icon ic-windowsphone" target="_blank"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="footer-payment-info">
+                            <div class="ft-nav ft-nav-top">
+                                <div class="col-md-10">
+                                    <p class="ft-txt">ช่องทางการชำระเงิน<i class="menu-expand"></i></p>
+                                    <div class="ft-close">
+                                        <ul>
+                                            <li class="ft-icon ic-linepay"></li>
+                                            <li class="ft-icon ic-visa"></li>
+                                            <li class="ft-icon ic-mastercard"></li>
+                                            <li class="ft-icon ic-paypal"></li>
+                                            <li class="ft-icon ic-paysbuy"></li>
+                                            <li class="ft-icon ic-payall"></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ft-nav">
+                                <div class="ft-shipping">
+                                    <p class="ft-txt">บริการจัดส่งไทย<i class="menu-expand"></i></p>
+                                    <div class="ft-close">
+                                        <span class="ft-icon ic-thaipost"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="footer-copyright">
+                            <div class="col-md-10">
+                                <p>Amarin Book Center Co.,Ltd. ร้านนายอินทร์ - ร้านหนังสือออนไลน์ที่มีหนังสือหลากหลายและดีที่สุดในประเทศไทย Copyright © 1999-2018 Amarin Book Center Co.,Ltd.</p>
+                                <p>E-Commerce Registration #0108114713086 | <a href="/term-and-condition/">Terms & Conditions</a> | <a href="/privacy-policy/">Privacy Policy</a></p>
+                            </div>
+                            <div class="">
+                                <div class="ft-icons">
+                                    <a href="http://truehits.net/stat.php?login=Naiin" class="ft-icon ic-stat" target="_blank"></a>
+                                    <a href="https://www.trustmarkthai.com/callbackData/popup.php?data=393036205d-39-4-85ea4653d8dd27b5208bdf691d3a52508f" class="ft-icon ic-bdb" target="_blank"></a>
+                                   <!-- <span class="dbd-logo">
+                                        <div id="ajaxDivReg">
+                                            <script src="https://www.trustmarkthai.com/callbackData/popup.php?data=393036205d-39-4-85ea4653d8dd27b5208bdf691d3a52508f" id="dbd-init"></script>
+                                            <div id="Certificate-banners">
+                                                <a title="กรมพัฒนาธุรกิจการค้า Trustmarkthai" style="padding-left: 5px;" href="javascript:void(0);" onclick="open_popup(&quot;https://www.trustmarkthai.com/callbackData/popup.php?data=393036205d-39-4-85ea4653d8dd27b5208bdf691d3a52508f&quot;);"><img alt="กรมพัฒนาธุรกิจการค้า Trustmarkthai" width="150px" src="https://www.trustmarkthai.com//trust_banners/dbd_silver.png"></a>
+                                            </div>
+                                        </div>
+                                    </span>-->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    	 
+    <div class="waiting">
+        <div class="waiting-content">
+            <div>
+                <img src="/img/global/loading.gif" id="loading" class="loader" />
+            </div>
+        </div>
+    </div>
+
+
+<script src="https://www.naiin.com/js/quick-view.js"></script>
+
+<script>
+    $(document).ajaxStart(function() {
+        $(".waiting").show();
+    });
+
+    $( document ).ajaxStop(function() {
+        $(".waiting").hide();
+    });
+</script>
+
+
+<script src="//conf.f-tra.com/fcconf/fcconf_0546_0001.js" charset="utf-8" type="text/javascript"></script>
+<script src="//asset.f-tra.com/track/cta2.js" charset="utf-8" type="text/javascript"></script>
+<script type="text/javascript" src="https://lvs.truehits.in.th/datasecure/b0001066.js"></script>
+
+</body>
+</html>
